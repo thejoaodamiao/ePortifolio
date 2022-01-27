@@ -6,11 +6,11 @@ import styled from '@emotion/styled/'
 const LogoBox = styled.span`
   font-weight: bold;
   font-size: 18px;
-  display: flex;
-  border: 1px solid red;
-  justify-content: space-between;
+  display: inline-flex;
   align-items: center;
+  justify-content: space-between;
   height: 30px;
+  width: 160px;
   line-height: 20px;
   padding: 10px;
 
@@ -24,7 +24,7 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/footprint${useColorModeValue('')}.png`
+  const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
 
   return (
     <Link href="/">
@@ -35,7 +35,6 @@ const Logo = () => {
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
-            ml={3}
           >
             João Damião Jr
           </Text>
