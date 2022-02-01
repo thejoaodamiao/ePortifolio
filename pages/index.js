@@ -3,8 +3,12 @@ import {
   Button,
   Container,
   Heading,
+  Icon,
   Image,
   Link,
+  List,
+  ListItem,
+  SimpleGrid,
   useColorModeValue,
 } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
@@ -13,6 +17,15 @@ import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
+import { GridItem } from '../components/grid-item'
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoGoogle,
+  IoLogoLinkedin,
+} from 'react-icons/io5'
+import Footer from '../components/footer'
 
 const Page = () => {
   return (
@@ -62,7 +75,14 @@ const Page = () => {
             Angular e Java estando estabelecido em Campina Grande - PB, Brasil .
             Atualmente no quarto ano de Ciências da Computação pela Universidade
             Estadual da Paraíba(UEPB). Quando não está online esta passeando com
-            seus cachorros.
+            seus cachorros. &nbsp;
+            <Link
+              href="/download/Joao-Damiao-Jr_CV.pdf"
+              download="Joao-Damiao-Jr_CV.pdf"
+              type="application/pdf"
+            >
+              Baixe meu currículo!
+            </Link>
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -100,6 +120,63 @@ const Page = () => {
             Eu ♥
           </Heading>
           <Paragraph>Arte, Musica, Games e filmes.</Paragraph>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Redes Sociais
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/thejoaodamiao" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @Thejoaodamiao
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://instagram.com/thejoaodamiao" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  @Thejoaodamiao
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/joão-damião-jr-4191111b0/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  @Thejoaodamiao
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="mailto:thejoaodamiao@gmail.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGoogle} />}
+                >
+                  thejoaodamiao@gmail.com
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
+        </Section>
+        <Section>
+          <Footer />
         </Section>
       </Container>
     </Layout>
