@@ -17,7 +17,14 @@ const Main = ({ children, router }) => {
           name="viewport"
           content="width=device-width, initial-scale=1"
         ></meta>
-        <title>João Damião - Homepage</title>
+        <meta name="author" content="João Damião" />
+        <meta property="og:site_name" content="João Damião - Portifolio" />
+        <link
+          rel="shortcut icon"
+          href="/images/footprint.png"
+          type="image/x-icon"
+        />
+        <title>João Damião - Portifolio</title>
       </Head>
 
       <NavBar path={router.asPath} />
