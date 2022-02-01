@@ -21,9 +21,9 @@ const Page = () => {
         <Box
           borderRadius="lg"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-          p={3}
           mb={6}
-          algign="center"
+          p={3}
+          textAlign="center"
         >
           Oi, Sou Programador Front-end!{' '}
         </Box>
@@ -38,7 +38,7 @@ const Page = () => {
             flexShrink={0}
             mt={{ base: 4, md: 0 }}
             ml={{ md: 6 }}
-            align="center"
+            textAlign="center"
           >
             <Image
               borderColor="whiteAlpha.600"
@@ -48,9 +48,11 @@ const Page = () => {
               display="inline-block"
               borderRadius="full"
               src="/images/pp.jpg"
+              alt="Profile picture"
             ></Image>
           </Box>
         </Box>
+
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             Sobre mim
@@ -105,3 +107,4 @@ const Page = () => {
 }
 
 export default Page
+export { getServerSideProps } from '../libs/chakra'

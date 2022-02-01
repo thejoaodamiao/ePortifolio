@@ -1,4 +1,4 @@
-import { Container, Box, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Box, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import thumbnailInkDrop from '../public/images/inkdrop_01.png'
@@ -69,3 +69,4 @@ const Works = () => {
 }
 
 export default Works
+export { getServerSideProps } from '../libs/chakra'

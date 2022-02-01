@@ -1,19 +1,18 @@
-import { ChakraProvider } from '@chakra-ui/provider'
 import Layout from '../components/layouts/main'
 import Fonts from '../components/fonts'
-import theme from '../libs/theme'
 import { AnimatePresence } from 'framer-motion'
+import Chakra from '../libs/chakra'
 
 const Website = ({ Component, pageProps, router }) => {
   return (
-    <ChakraProvider theme={theme}>
+    <Chakra cookies={pageProps.cookies}>
       <Fonts />
       <Layout router={router}>
         <AnimatePresence>
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </Layout>
-    </ChakraProvider>
+    </Chakra>
   )
 }
 
