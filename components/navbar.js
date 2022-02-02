@@ -71,18 +71,7 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Portifolio
-          </LinkItem>
-          <LinkItem
-            href="https://github.com/thejoaodamiao/ePortifolio"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <IoLogoGithub />
-            Codigo Fonte
+            Portifólio
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
@@ -100,16 +89,8 @@ const Navbar = props => {
                   <MenuItem as={Link}>Sobre mim</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Portifolio</MenuItem>
+                  <MenuItem as={Link}>Portifólio</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/thejoaodamiao/ePortifolio"
-                  style={{ gap: 4 }}
-                >
-                  <IoLogoGithub />
-                  Codigo Fonte
-                </MenuItem>
               </MenuList>
             </Menu>
           </Box>
