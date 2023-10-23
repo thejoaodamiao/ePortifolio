@@ -2,6 +2,7 @@ import { Container, Box, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import thumbnailInkDrop from '../public/images/inkdrop_01.png'
+import thumbnailGitFinder from '../public/images/git_finder.png'
 import Layout from '../components/layouts/article'
 
 const Works = () => {
@@ -14,12 +15,11 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
-              id="inkdrop"
-              title="Inkdrop"
-              thumbnail={thumbnailInkDrop}
+              id="gitfinder"
+              title="Git Finder"
+              thumbnail={thumbnailGitFinder}
             >
-              A markdown note-taking app A markdown note-taking app A markdown
-              note-taking app A markdown note-taking app
+              App Reactjs utlizando pelo vite de busca de usuarios github consumindo a api do github.
             </WorkGridItem>
           </Section>
           <Section>

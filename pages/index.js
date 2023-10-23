@@ -38,7 +38,7 @@ const Page = () => {
           p={3}
           textAlign="center"
         >
-          Oi, Sou Programador Front-end!{' '}
+          Oi, Sou Programador FullStack!{' '}
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -71,13 +71,13 @@ const Page = () => {
             Sobre mim
           </Heading>
           <Paragraph>
-            João é um freelance e Front-end dev com experiencia em React, Node,
+            João é um freelance e FullStack dev com experiencia em React, Node,
             Angular e Java estando estabelecido em Campina Grande - PB, Brasil .
             Atualmente no quarto ano de Ciências da Computação pela Universidade
             Estadual da Paraíba(UEPB). Quando não está online esta passeando com
-            seus cachorros. &nbsp;
+            seus cachorros.  &nbsp;
             <Link
-              href="/download/Joao-Damiao-Jr_CV.pdf"
+              href="/download/Joao_Damiao_CV_EN.pdf"
               download="Joao-Damiao-Jr_CV.pdf"
               type="application/pdf"
             >
